@@ -1,5 +1,5 @@
 {% set name = "neocmakelsp" %}
-{% set version = "0.5.18" %}
+{% set version = "0.7.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Decodetalkers/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 8a9adb559c9ffa8fa29ee82393e1b76f40892a232a3aaada2e9e118abf466a6a
+  sha256: 9c761a54ae8a6b298eabc9b7cb215fceafd27e9193eb61e1d69cd7a5dc6dd1c1
 
 build:
   number: 0
