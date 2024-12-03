@@ -1,13 +1,13 @@
+set CARGO_PROFILE_RELEASE_STRIP=symbols
+set CARGO_PROFILE_RELEASE_LTO=fat
+
 :: check licenses
 cargo-bundle-licenses ^
     --format yaml ^
     --output THIRDPARTY.yml || goto :error
 
 :: build statically linked binary with Rust
-cargo install --locked --root %LIBRARY_PREFIX% --path . || goto :error
-
-:: remove extra build file
-del /F /Q "%LIBRARY_PREFIX%\.crates.toml" || goto :error
+cargo install --bins --locked --no-track --root %LIBRARY_PREFIX% --path . || goto :error
 
 goto :EOF
 
