@@ -1,5 +1,5 @@
 context:
-  version: "0.8.16"
+  version: "0.8.19"
 
 package:
   name: neocmakelsp
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Decodetalkers/neocmakelsp/archive/v${{ version }}.tar.gz
-  sha256: fd533468e0ab23977243d4923715dc010ddd9d299f8a3d21c1252cfc1ee009b9
+  sha256: e63cf9a59f818c61196ae41136c164d62fe1fe42116c7dd51bee0f9df2ce55ac
 
 build:
   number: 0
