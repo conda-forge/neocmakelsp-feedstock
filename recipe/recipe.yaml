@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Decodetalkers/neocmakelsp/archive/v${{ version }}.tar.gz
-  sha256: 11aa287b4bfaf60de65b13610656b0dca0ede24881b3a03465a569d15a6be0ca
+  sha256: 323716e5aebf5487e3d2fe9dfd9451ee730a07ede22439193e6ec225343508fe
 
 build:
   number: 1
